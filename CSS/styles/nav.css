@@ -1,8 +1,16 @@
+:root {
+  --color-principal: deepskyblue;
+  --texto-parrafo: 24px;
+}
+
 nav {
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: var(--texto-parrafo);
+  background: linear-gradient(90deg, var(--color-principal), rgb(5, 5, 174));
+
 }
 
 nav > div {
@@ -10,4 +18,40 @@ nav > div {
   justify-content: center;
   align-items: center;
   gap: 12px;
+}
+/*clase*/
+.hover:hover {
+  font-weight: 600;
+  cursor: pointer;
+  transition: font-weight 0.5s;
+}
+/*id*/
+#contacto {
+  background-color: white;
+  color: var(--color-principal);
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  /*Transicion*/
+  transition: background-color 0.5s, color 0.5s;
+  font-size: var(--texto-parrafo);
+}
+
+/*
+  PSEUDO CLASE
+  MANEJA EL ESTADO DE UN ELEMENTO
+
+  LISTA DE PSEUDO CLASES
+  :active (cuando se da click)
+  :focus (cuando se selecciona)
+  :hover (cuando se pasa el mouse)
+  :visited (cuando ya se visitó)
+  :link (cuando no se ha visitado)
+  :first-child (primer hijo)
+  :last-child (último hijo)
+*/
+
+#contacto:hover {
+  background-color: var(--color-principal);
+  color: white;
+  cursor: pointer;
 }
