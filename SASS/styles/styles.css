@@ -1,7 +1,39 @@
-/* hola mundo */
+/* Comentario
+ * variable */
+/* Mixings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #inicial {
   color: blue;
 }
 #inicial p {
   background-color: red;
+}
+
+.columna-centrada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.columna-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.blogs .blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */

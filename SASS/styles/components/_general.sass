@@ -1,0 +1,19 @@
+/*
+  Comentario
+  variable
+$base-color: blue
+/*
+  Mixings
+@mixin columna($horizontal, $vertical)
+  display: flex
+  flex-direction: column
+  justify-content: $vertical
+  align-items: $horizontal
+
+@mixin grid($columna)
+  display: grid
+  grid-template-columns: $columna
+
+*
+  margin: 0
+  padding: 0
